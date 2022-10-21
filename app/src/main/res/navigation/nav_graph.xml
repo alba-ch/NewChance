@@ -54,8 +54,8 @@
         tools:layout="@layout/p3_fragment_forum">
 
         <action
-            android:id="@+id/action_FragmentTabMenu_to_FragmentForum"
-            app:destination="@id/FragmentForum" />
+            android:id="@+id/action_FragmentForum_to_FragmentTabMenu"
+            app:destination="@id/FragmentTabMenu" />
     </fragment>
     <fragment
         android:id="@+id/FragmentAsylum"
@@ -64,8 +64,8 @@
         tools:layout="@layout/p4_fragment_asylum">
 
         <action
-            android:id="@+id/action_FragmentAsylum_to_FragmentForum"
-            app:destination="@id/FragmentForum" />
+            android:id="@+id/action_FragmentAsylum_to_FragmentTabMenu"
+            app:destination="@id/FragmentTabMenu" />
     </fragment>
     <fragment
         android:id="@+id/FragmentHealthCare"
@@ -74,8 +74,8 @@
         tools:layout="@layout/p5_fragment_healthcare">
 
         <action
-            android:id="@+id/action_FragmentHealthCare_to_FragmentForum"
-            app:destination="@id/FragmentForum" />
+            android:id="@+id/action_FragmentHealthCare_to_FragmentTabMenu"
+            app:destination="@id/FragmentTabMenu" />
     </fragment>
     <fragment
         android:id="@+id/FragmentFood"
@@ -84,7 +84,7 @@
         tools:layout="@layout/p6_fragment_food">
 
         <action
-            android:id="@+id/action_FragmentFood_to_FragmentForum"
-            app:destination="@id/FragmentForum" />
+            android:id="@+id/action_FragmentFood_to_FragmentTabMenu"
+            app:destination="@id/FragmentTabMenu" />
     </fragment>
 </navigation>
