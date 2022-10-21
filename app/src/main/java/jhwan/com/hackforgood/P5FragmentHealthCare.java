@@ -7,13 +7,12 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.fragment.NavHostFragment;
 
-import jhwan.com.hackforgood.databinding.P3FragmentForumBinding;
+import jhwan.com.hackforgood.databinding.P5FragmentHealthcareBinding;
 
-public class P3FragmentForum extends Fragment {
+public class P5FragmentHealthCare extends Fragment {
 
-    private P3FragmentForumBinding binding;
+    private P5FragmentHealthcareBinding binding;
 
     @Override
     public View onCreateView(
@@ -21,8 +20,9 @@ public class P3FragmentForum extends Fragment {
             Bundle savedInstanceState
     ) {
 
-        binding = P3FragmentForumBinding.inflate(inflater, container, false);
+        binding = P5FragmentHealthcareBinding.inflate(inflater, container, false);
         return binding.getRoot();
+
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
