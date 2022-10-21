@@ -24,6 +24,7 @@
 
                 <TextView
                     android:id="@+id/p1_title"
+                    android:textColor="@color/text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="40dp"
@@ -37,6 +38,7 @@
 
                 <TextView
                     android:id="@+id/p1_description"
+                    android:textColor="@color/text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
@@ -49,83 +51,105 @@
 
                 <ImageButton
                     android:id="@+id/p1_button_asylum"
-                    android:layout_width="94dp"
-                    android:layout_height="89dp"
-                    android:layout_marginTop="56dp"
+                    android:layout_width="140dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="44dp"
+                    android:backgroundTint="@color/transparent"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.258"
+                    app:layout_constraintHorizontal_bias="0.196"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/p1_description"
-                    app:srcCompat="@drawable/ic_launcher_background" />
-
-                <ImageButton
-                    android:id="@+id/p1_button_health_care"
-                    android:layout_width="94dp"
-                    android:layout_height="89dp"
-                    android:layout_marginStart="56dp"
-                    app:layout_constraintStart_toEndOf="@+id/p1_button_asylum"
-                    app:layout_constraintTop_toTopOf="@+id/p1_button_asylum"
-                    app:srcCompat="@drawable/ic_launcher_background" />
-
-                <ImageButton
-                    android:id="@+id/p1_button_legal_aid"
-                    android:layout_width="94dp"
-                    android:layout_height="89dp"
-                    android:layout_marginTop="60dp"
-                    app:layout_constraintStart_toStartOf="@+id/p1_button_asylum"
-                    app:layout_constraintTop_toBottomOf="@+id/p1_button_asylum"
-                    app:srcCompat="@drawable/ic_launcher_background" />
-
-                <ImageButton
-                    android:id="@+id/p1_button_education"
-                    android:layout_width="94dp"
-                    android:layout_height="89dp"
-                    android:layout_marginStart="56dp"
-                    app:layout_constraintStart_toEndOf="@+id/p1_button_legal_aid"
-                    app:layout_constraintTop_toTopOf="@+id/p1_button_legal_aid"
-                    app:srcCompat="@drawable/ic_launcher_background" />
-
-                <ImageButton
-                    android:id="@+id/p1_button_food_aid"
-                    android:layout_width="94dp"
-                    android:layout_height="89dp"
-                    android:layout_marginTop="60dp"
-                    app:layout_constraintStart_toStartOf="@+id/p1_button_legal_aid"
-                    app:layout_constraintTop_toBottomOf="@+id/p1_button_legal_aid"
-                    app:srcCompat="@drawable/ic_launcher_background" />
+                    app:srcCompat="@drawable/btn_asylum" />
 
                 <ImageButton
                     android:id="@+id/p1_button_forum"
-                    android:layout_width="94dp"
-                    android:layout_height="89dp"
-                    android:layout_marginStart="56dp"
+                    android:layout_width="140dp"
+                    android:layout_height="130dp"
+                    android:layout_marginStart="28dp"
+                    android:backgroundTint="@color/transparent"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
                     app:layout_constraintStart_toEndOf="@+id/p1_button_food_aid"
                     app:layout_constraintTop_toTopOf="@+id/p1_button_food_aid"
-                    app:srcCompat="@drawable/ic_launcher_background" />
+                    app:srcCompat="@drawable/btn_forum" />
+
+                <ImageButton
+                    android:id="@+id/p1_button_health_care"
+                    android:layout_width="140dp"
+                    android:layout_height="130dp"
+                    android:layout_marginStart="28dp"
+                    android:backgroundTint="@color/transparent"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintStart_toEndOf="@+id/p1_button_asylum"
+                    app:layout_constraintTop_toTopOf="@+id/p1_button_asylum"
+                    app:srcCompat="@drawable/btn_healthcare" />
+
+                <ImageButton
+                    android:id="@+id/p1_button_education"
+                    android:layout_width="140dp"
+                    android:layout_height="130dp"
+                    android:layout_marginStart="28dp"
+                    android:backgroundTint="@color/transparent"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintStart_toEndOf="@+id/p1_button_legal_aid"
+                    app:layout_constraintTop_toTopOf="@+id/p1_button_legal_aid"
+                    app:srcCompat="@drawable/btn_food" />
+
+                <ImageButton
+                    android:id="@+id/p1_button_legal_aid"
+                    android:layout_width="140dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="24dp"
+                    android:backgroundTint="@color/transparent"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintStart_toStartOf="@+id/p1_button_asylum"
+                    app:layout_constraintTop_toBottomOf="@+id/p1_button_asylum"
+                    app:srcCompat="@drawable/btn_legal" />
+
+                <ImageButton
+                    android:id="@+id/p1_button_food_aid"
+                    android:layout_width="140dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="24dp"
+                    android:backgroundTint="@color/transparent"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintStart_toStartOf="@+id/p1_button_legal_aid"
+                    app:layout_constraintTop_toBottomOf="@+id/p1_button_legal_aid"
+                    app:srcCompat="@drawable/btn_education" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="265dp">
 
                 <Button
                     android:id="@+id/p1_button_report"
                     android:layout_width="240dp"
                     android:layout_height="48dp"
-                    android:layout_marginTop="590dp"
+                    android:layout_marginTop="24dp"
+                    android:backgroundTint="@color/white"
                     android:text="Report Missing Person"
                     android:textAllCaps="false"
+                    android:textColor="@color/text"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.502"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
 
                 <TextView
                     android:id="@+id/p1_help_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="96dp"
                     android:text="If you want to help"
+                    android:textColor="@color/text"
+                    android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.08"
                     app:layout_constraintStart_toStartOf="parent"
@@ -135,12 +159,14 @@
                     android:id="@+id/p1_help_description"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:textColor="@color/text"
+                    android:layout_marginTop="16dp"
                     android:text="Lorem ipsum, Lorem ipsum"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/p1_help_label"
                     app:layout_constraintTop_toBottomOf="@id/p1_help_label" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
