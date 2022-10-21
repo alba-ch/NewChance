@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/p1_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="76dp"
+                    android:text="LocalHelp"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/p1_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Aid resources for refugees"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.506"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/p1_title" />
+
+                <ImageButton
+                    android:id="@+id/p1_button_asylum"
+                    android:layout_width="94dp"
+                    android:layout_height="89dp"
+                    android:layout_marginTop="56dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.258"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/p1_description"
+                    app:srcCompat="@drawable/ic_launcher_background" />
+
+                <ImageButton
+                    android:id="@+id/p1_button_health_care"
+                    android:layout_width="94dp"
+                    android:layout_height="89dp"
+                    android:layout_marginStart="56dp"
+                    app:layout_constraintStart_toEndOf="@+id/p1_button_asylum"
+                    app:layout_constraintTop_toTopOf="@+id/p1_button_asylum"
+                    app:srcCompat="@drawable/ic_launcher_background" />
+
+                <ImageButton
+                    android:id="@+id/p1_button_legal_aid"
+                    android:layout_width="94dp"
+                    android:layout_height="89dp"
+                    android:layout_marginTop="60dp"
+                    app:layout_constraintStart_toStartOf="@+id/p1_button_asylum"
+                    app:layout_constraintTop_toBottomOf="@+id/p1_button_asylum"
+                    app:srcCompat="@drawable/ic_launcher_background" />
+
+                <ImageButton
+                    android:id="@+id/p1_button_education"
+                    android:layout_width="94dp"
+                    android:layout_height="89dp"
+                    android:layout_marginStart="56dp"
+                    app:layout_constraintStart_toEndOf="@+id/p1_button_legal_aid"
+                    app:layout_constraintTop_toTopOf="@+id/p1_button_legal_aid"
+                    app:srcCompat="@drawable/ic_launcher_background" />
+
+                <ImageButton
+                    android:id="@+id/p1_button_food_aid"
+                    android:layout_width="94dp"
+                    android:layout_height="89dp"
+                    android:layout_marginTop="60dp"
+                    app:layout_constraintStart_toStartOf="@+id/p1_button_legal_aid"
+                    app:layout_constraintTop_toBottomOf="@+id/p1_button_legal_aid"
+                    app:srcCompat="@drawable/ic_launcher_background" />
+
+                <ImageButton
+                    android:id="@+id/p1_button_forum"
+                    android:layout_width="94dp"
+                    android:layout_height="89dp"
+                    android:layout_marginStart="56dp"
+                    app:layout_constraintStart_toEndOf="@+id/p1_button_food_aid"
+                    app:layout_constraintTop_toTopOf="@+id/p1_button_food_aid"
+                    app:srcCompat="@drawable/ic_launcher_background" />
+
+                <Button
+                    android:id="@+id/p1_button_report"
+                    android:layout_width="240dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="630dp"
+                    android:text="Report Missing Person"
+                    android:textAllCaps="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/p1_help_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="If you want to help"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.08"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/p1_help_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Lorem ipsum, Lorem ipsum"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/p1_help_label"
+                    app:layout_constraintTop_toBottomOf="@id/p1_help_label" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
