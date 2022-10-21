@@ -3,14 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/background_shade"
     android:layout_height="match_parent">
 
     <Button
         android:id="@+id/p2_button_home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="104dp"
         android:backgroundTint="@color/white"
+        android:style="?android:attr/borderlessButtonStyle"
         android:text="Home"
         android:textAllCaps="false"
         android:textColor="@color/black"
@@ -21,37 +23,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/p2_button_forum"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:backgroundTint="@color/white"
-        android:text="Forum"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/p2_button_home"
-        app:layout_constraintTop_toBottomOf="@+id/p2_button_home" />
-
-    <Button
-        android:id="@+id/p2_button_report"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:backgroundTint="@color/white"
-        android:text="Report missing person"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/p2_button_forum"
-        app:layout_constraintTop_toBottomOf="@+id/p2_button_forum" />
-
-    <Button
         android:id="@+id/p2_button_feedback"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="4dp"
         android:backgroundTint="@color/white"
+        android:style="?android:attr/borderlessButtonStyle"
         android:text="Feedback"
         android:textAllCaps="false"
         android:textColor="@color/black"
@@ -60,17 +37,109 @@
         app:layout_constraintTop_toBottomOf="@+id/p2_button_report" />
 
     <Button
+        android:id="@+id/p2_button_report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/white"
+        android:style="?android:attr/borderlessButtonStyle"
+        android:text="Report missing person"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/p2_button_forum"
+        app:layout_constraintTop_toBottomOf="@+id/p2_button_forum" />
+
+    <Button
+        android:id="@+id/p2_button_forum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/white"
+        android:style="?android:attr/borderlessButtonStyle"
+        android:text="Forum"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/p2_button_home"
+        app:layout_constraintTop_toBottomOf="@+id/p2_button_home" />
+
+    <Button
         android:id="@+id/p2_button_sign_out"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="412dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="@color/white"
         android:text="Sign Out"
         android:textAllCaps="false"
+        android:style="?android:attr/borderlessButtonStyle"
         android:textColor="@color/black"
         android:textSize="22sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.878"
+        app:layout_constraintHorizontal_bias="0.899"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/p2_button_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/white"
+        android:text="Sign In"
+        android:textAllCaps="false"
+        android:style="?android:attr/borderlessButtonStyle"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.899"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/p2_button_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/white"
+        android:style="?android:attr/borderlessButtonStyle"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/p2_button_close"
+        android:layout_width="47dp"
+        android:layout_height="42dp"
+        app:srcCompat="@drawable/ic_close"
+        tools:layout_editor_absoluteX="348dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/p2_image_pfp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/p2_button_feedback" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/p2_text_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:text="Irene Berlanga"
+        android:textSize="16dp"
+        app:layout_constraintStart_toEndOf="@+id/p2_image_pfp"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
