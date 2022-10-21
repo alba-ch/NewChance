@@ -6,22 +6,23 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textview_first"
+        android:id="@+id/p3_label_category"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_first_fragment"
-        app:layout_constraintBottom_toTopOf="@id/button_first"
+        android:layout_marginTop="16dp"
+        android:text="Category"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button_first"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/next"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_first" />
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="209dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="24dp"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toEndOf="@+id/p3_label_category"
+        app:layout_constraintTop_toTopOf="@+id/p3_label_category" />
 </androidx.constraintlayout.widget.ConstraintLayout>
