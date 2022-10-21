@@ -12,10 +12,39 @@
         tools:layout="@layout/p1_fragment_main">
 
         <action
+            android:id="@+id/action_FragmentMain_to_FragmentTabMenu"
+            app:destination="@id/FragmentTabMenu" />
+        <action
             android:id="@+id/action_FragmentMain_to_FragmentAsylum"
             app:destination="@id/FragmentAsylum" />
         <action
+            android:id="@+id/action_FragmentMain_to_FragmentHealthCare"
+            app:destination="@id/FragmentHealthCare" />
+        <action
+            android:id="@+id/action_FragmentMain_to_FragmentLegal"
+            app:destination="@id/FragmentAsylum" />
+        <action
+            android:id="@+id/action_FragmentMain_to_FragmentFood"
+            app:destination="@id/FragmentFood" />
+        <action
+            android:id="@+id/action_FragmentMain_to_FragmentEducation"
+            app:destination="@id/FragmentAsylum" />
+        <action
             android:id="@+id/action_FragmentMain_to_FragmentForum"
+            app:destination="@id/FragmentForum" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FragmentTabMenu"
+        android:name="jhwan.com.hackforgood.P2FragmentTabMenu"
+        android:label="Fragment Asylum"
+        tools:layout="@layout/p2_fragment_tap_menu">
+
+        <action
+            android:id="@+id/action_FragmentTabMenu_to_FragmentMain"
+            app:destination="@id/FragmentMain" />
+        <action
+            android:id="@+id/action_FragmentTabMenu_to_FragmentForum"
             app:destination="@id/FragmentForum" />
     </fragment>
     <fragment
@@ -25,8 +54,8 @@
         tools:layout="@layout/p3_fragment_forum">
 
         <action
-            android:id="@+id/action_FragmentForum_to_FragmentMain"
-            app:destination="@id/FragmentMain" />
+            android:id="@+id/action_FragmentTabMenu_to_FragmentForum"
+            app:destination="@id/FragmentForum" />
     </fragment>
     <fragment
         android:id="@+id/FragmentAsylum"
@@ -35,7 +64,27 @@
         tools:layout="@layout/p4_fragment_asylum">
 
         <action
-            android:id="@+id/action_FragmentAsylum_to_FragmentMain"
-            app:destination="@id/FragmentMain" />
+            android:id="@+id/action_FragmentAsylum_to_FragmentForum"
+            app:destination="@id/FragmentForum" />
+    </fragment>
+    <fragment
+        android:id="@+id/FragmentHealthCare"
+        android:name="jhwan.com.hackforgood.P5FragmentHealthCare"
+        android:label="Fragment HealthCare"
+        tools:layout="@layout/p5_fragment_healthcare">
+
+        <action
+            android:id="@+id/action_FragmentHealthCare_to_FragmentForum"
+            app:destination="@id/FragmentForum" />
+    </fragment>
+    <fragment
+        android:id="@+id/FragmentFood"
+        android:name="jhwan.com.hackforgood.P6FragmentFood"
+        android:label="Fragment Food"
+        tools:layout="@layout/p6_fragment_food">
+
+        <action
+            android:id="@+id/action_FragmentFood_to_FragmentForum"
+            app:destination="@id/FragmentForum" />
     </fragment>
 </navigation>
