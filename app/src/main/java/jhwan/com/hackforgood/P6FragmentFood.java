@@ -28,6 +28,7 @@ public class P6FragmentFood extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        ((MainActivity) getActivity()).setCurrentFlag(MainActivity.Fragments.FOOD);
         binding.p6ButtonMenu.setOnClickListener(view1 -> NavHostFragment.findNavController(P6FragmentFood.this)
                 .navigate(R.id.action_FragmentFood_to_FragmentTabMenu));
     }

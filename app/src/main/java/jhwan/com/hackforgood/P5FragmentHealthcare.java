@@ -9,26 +9,29 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import jhwan.com.hackforgood.databinding.P4FragmentAsylumBinding;
+import jhwan.com.hackforgood.databinding.P5FragmentHealthcareBinding;
 
-public class P4FragmentAsylum extends Fragment {
+public class P5FragmentHealthcare extends Fragment {
 
-    private P4FragmentAsylumBinding binding;
+    private P5FragmentHealthcareBinding binding;
 
     @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
-        binding = P4FragmentAsylumBinding.inflate(inflater, container, false);
+
+        binding = P5FragmentHealthcareBinding.inflate(inflater, container, false);
         return binding.getRoot();
+
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        ((MainActivity) getActivity()).setCurrentFlag(MainActivity.Fragments.ASYLUM);
-        binding.p4ButtonMenu.setOnClickListener(view1 -> NavHostFragment.findNavController(P4FragmentAsylum.this)
-                .navigate(R.id.action_FragmentAsylum_to_FragmentTabMenu));
+        ((MainActivity) getActivity()).setCurrentFlag(MainActivity.Fragments.HEALTHCARE);
+        binding.p5ButtonMenu.setOnClickListener(view1 ->
+                NavHostFragment.findNavController(P5FragmentHealthcare.this)
+                .navigate(R.id.action_FragmentHealthcare_to_FragmentTabMenu));
     }
 
     @Override

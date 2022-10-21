@@ -106,12 +106,12 @@
                     android:backgroundTint="@color/transparent"
                     android:padding="0dp"
                     android:scaleType="fitXY"
-                    app:layout_constraintStart_toEndOf="@+id/p1_button_food_aid"
-                    app:layout_constraintTop_toTopOf="@+id/p1_button_food_aid"
+                    app:layout_constraintStart_toEndOf="@+id/p1_button_education"
+                    app:layout_constraintTop_toTopOf="@+id/p1_button_education"
                     app:srcCompat="@drawable/btn_forum" />
 
                 <ImageButton
-                    android:id="@+id/p1_button_health_care"
+                    android:id="@+id/p1_button_healthcare"
                     android:layout_width="140dp"
                     android:layout_height="130dp"
                     android:layout_marginStart="28dp"
@@ -123,7 +123,7 @@
                     app:srcCompat="@drawable/btn_healthcare" />
 
                 <ImageButton
-                    android:id="@+id/p1_button_education"
+                    android:id="@+id/p1_button_food_aid"
                     android:layout_width="140dp"
                     android:layout_height="130dp"
                     android:layout_marginStart="28dp"
@@ -147,7 +147,7 @@
                     app:srcCompat="@drawable/btn_legal" />
 
                 <ImageButton
-                    android:id="@+id/p1_button_food_aid"
+                    android:id="@+id/p1_button_education"
                     android:layout_width="140dp"
                     android:layout_height="130dp"
                     android:layout_marginTop="24dp"

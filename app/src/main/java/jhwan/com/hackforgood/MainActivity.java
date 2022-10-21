@@ -24,6 +24,12 @@ public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration appBarConfiguration;
     private P0ActivityMainBinding binding;
 
+    public enum Fragments {
+        MAIN, TAB_MENU, FORUM, ASYLUM, HEALTHCARE, FOOD, LEGAL, EDUCATION, REPORT, FEEDBACK
+    }
+
+    private Fragments currentFlag;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
 
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
+
+        currentFlag = Fragments.MAIN;
     }
 
     @Override
@@ -62,5 +70,12 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         return NavigationUI.navigateUp(navController, appBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    public Fragments getCurrentFlag(){
+        return currentFlag;
+    }
+    public void setCurrentFlag(Fragments fragment){
+        currentFlag = fragment;
     }
 }

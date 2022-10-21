@@ -1,6 +1,5 @@
 package jhwan.com.hackforgood;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -27,13 +26,14 @@ public class P1FragmentMain extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        ((MainActivity) getActivity()).setCurrentFlag(MainActivity.Fragments.MAIN);
 
         binding.p1ButtonAsylum.setOnClickListener(view1 -> NavHostFragment.findNavController(P1FragmentMain.this)
                 .navigate(R.id.action_FragmentMain_to_FragmentAsylum));
-        binding.p1ButtonHealthCare.setOnClickListener(view1 -> NavHostFragment.findNavController(P1FragmentMain.this)
-                .navigate(R.id.action_FragmentMain_to_FragmentHealthCare));
+        binding.p1ButtonHealthcare.setOnClickListener(view1 -> NavHostFragment.findNavController(P1FragmentMain.this)
+                .navigate(R.id.action_FragmentMain_to_FragmentHealthcare));
         binding.p1ButtonLegalAid.setOnClickListener(view1 -> NavHostFragment.findNavController(P1FragmentMain.this)
-                .navigate(R.id.action_FragmentMain_to_FragmentAsylum));
+                .navigate(R.id.action_FragmentMain_to_FragmentLegal));
         binding.p1ButtonFoodAid.setOnClickListener(view1 -> NavHostFragment.findNavController(P1FragmentMain.this)
                 .navigate(R.id.action_FragmentMain_to_FragmentFood));
         binding.p1ButtonEducation.setOnClickListener(view1 -> NavHostFragment.findNavController(P1FragmentMain.this)
