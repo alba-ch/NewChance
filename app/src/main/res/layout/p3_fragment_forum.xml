@@ -25,4 +25,23 @@
         android:minHeight="48dp"
         app:layout_constraintStart_toEndOf="@+id/p3_label_category"
         app:layout_constraintTop_toTopOf="@+id/p3_label_category" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="364dp"
+        android:layout_height="626dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add" />
 </androidx.constraintlayout.widget.ConstraintLayout>
