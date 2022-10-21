@@ -28,6 +28,20 @@ public class P1FragmentMain extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        binding.p1ButtonAsylum.setOnClickListener(view1 -> NavHostFragment.findNavController(P1FragmentMain.this)
+                .navigate(R.id.action_FragmentMain_to_FragmentAsylum));
+        binding.p1ButtonHealthCare.setOnClickListener(view1 -> NavHostFragment.findNavController(P1FragmentMain.this)
+                .navigate(R.id.action_FragmentMain_to_FragmentAsylum));
+        binding.p1ButtonLegalAid.setOnClickListener(view1 -> NavHostFragment.findNavController(P1FragmentMain.this)
+                .navigate(R.id.action_FragmentMain_to_FragmentAsylum));
+        binding.p1ButtonFoodAid.setOnClickListener(view1 -> NavHostFragment.findNavController(P1FragmentMain.this)
+                .navigate(R.id.action_FragmentMain_to_FragmentAsylum));
+        binding.p1ButtonEducation.setOnClickListener(view1 -> NavHostFragment.findNavController(P1FragmentMain.this)
+                .navigate(R.id.action_FragmentMain_to_FragmentAsylum));
+        binding.p1ButtonForum.setOnClickListener(view1 -> NavHostFragment.findNavController(P1FragmentMain.this)
+                .navigate(R.id.action_FragmentMain_to_FragmentForum));
+
     }
 
     @Override
@@ -35,5 +49,4 @@ public class P1FragmentMain extends Fragment {
         super.onDestroyView();
         binding = null;
     }
-
 }
