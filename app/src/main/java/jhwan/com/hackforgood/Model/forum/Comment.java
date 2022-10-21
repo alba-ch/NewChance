@@ -1,24 +1,34 @@
 package jhwan.com.hackforgood.Model.forum;
 
 /*
-This class corresponds to the comments the users will be able to leave under every forum entry.
+This class corresponds to the comments the users will be able to leave under every forum's entry.
  */
 
 import java.time.LocalDate;
 
 public class Comment {
 
-    // Atributs
+    /*Atributs
+        idEntry: id of the forum's entry that the comment's refers to
+        idUser: id of the user that created the comment
+        text: text that the user wrote
+        date: date when the comment was created
+        anonymous: this boolean will allow us to know if the user want the message to be published
+                    anonymously or not
+
+     */
     String idEntry, idUser, text;
     LocalDate date;
+    boolean anonymous;
 
     // Constructors
     public Comment (){}
-    public Comment(String entry, String user, String text, LocalDate date) {
+    public Comment(String entry, String user, String text, LocalDate date, boolean anonymous) {
         this.idEntry = entry;
         this.idUser = user;
         this.text = text;
         this.date = date;
+        this.anonymous = anonymous;
     }
 
     //Getters i Setters
@@ -52,5 +62,13 @@ public class Comment {
 
     public void setDate(LocalDate date) {
         this.date = date;
+    }
+
+    public boolean isAnonymous() {
+        return anonymous;
+    }
+
+    public void setAnonymous(boolean anonymous) {
+        this.anonymous = anonymous;
     }
 }
