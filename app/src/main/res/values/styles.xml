@@ -9,7 +9,6 @@
 
     <style name="title">
         <item name="android:padding">4dip</item>
-        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
         <item name="android:textColor">@color/text</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textAlignment">textStart</item>

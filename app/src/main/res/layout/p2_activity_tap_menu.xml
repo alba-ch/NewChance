@@ -103,7 +103,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:backgroundTint="@color/white"
-        android:style="?android:attr/borderlessButtonStyle"
+        style="?android:attr/borderlessButtonStyle"
         android:text="Sign Up"
         android:textAllCaps="false"
         android:textColor="@color/black"
@@ -117,9 +117,14 @@
         android:id="@+id/p2_button_close"
         android:layout_width="47dp"
         android:layout_height="42dp"
-        app:srcCompat="@drawable/ic_close"
-        tools:layout_editor_absoluteX="348dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/p2_text_username"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.034"
+        app:srcCompat="@drawable/ic_close" />
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/p2_image_pfp"
