@@ -72,11 +72,12 @@
         android:id="@+id/recyclerView"
         android:layout_width="357dp"
         android:layout_height="553dp"
-        tools:listitem="@layout/p4_recycler_view_shelter_item"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/p4_search_text_area"
-        app:layout_constraintVertical_bias="0.222" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:listitem="@layout/p4_recycler_view_shelter_item" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
