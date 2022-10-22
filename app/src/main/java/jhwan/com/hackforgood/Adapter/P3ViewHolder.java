@@ -9,10 +9,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import jhwan.com.hackforgood.R;
 
 public class P3ViewHolder extends RecyclerView.ViewHolder {
-    private TextView title;
-    private TextView category;
-    private TextView message;
-    private TextView commentCount;
+    private final TextView title;
+    private final TextView category;
+    private final TextView message;
+    private final TextView commentCount;
 
     public P3ViewHolder(@NonNull View itemView) {
         super(itemView);

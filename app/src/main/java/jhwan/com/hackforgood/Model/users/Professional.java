@@ -26,24 +26,29 @@ public class Professional extends User{
         phonenum: phone number so the users can contact hem
 
     */
-    String profession, accrediation_img, description, status, price, email;
+    String profession, accrediation_img, description, status, price, email, direction, schedule;
     int phonenum;
 
     // Constructors
 
 
-    public Professional() {
-
+    public Professional(String name, String direction, String schedule) {
+        super("DefaultId", name, "DefaultGender", "DefaultAge", "DefaultPassword",
+                "DefaultImg", "DefaultDocImg", "DefaultEmail", true);
+        this.direction = direction;
+        this.schedule = schedule;
     }
 
-    public Professional(String id, String name, String sex, String age, String password, String img, String documention_img, String email, Boolean verified, String profession, String accrediation_img, String description, String status, String price, String email1, int phonenum) {
+    public Professional(String id, String name, String sex, String age, String password, String img, String documention_img, String email, Boolean verified,
+                        String profession, String accrediation_img, String description, String status, String price, String direction, String schedule, int phonenum) {
         super(id, name, sex, age, password, img, documention_img, email, verified);
         this.profession = profession;
         this.accrediation_img = accrediation_img;
         this.description = description;
         this.status = status;
         this.price = price;
-        this.email = email1;
+        this.direction = direction;
+        this.schedule = schedule;
         this.phonenum = phonenum;
     }
 
@@ -97,6 +102,22 @@ public class Professional extends User{
     @Override
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getDirection() {
+        return direction;
+    }
+
+    public void setDirection(String direction) {
+        this.direction = direction;
+    }
+
+    public String getSchedule() {
+        return schedule;
+    }
+
+    public void setSchedule(String schedule) {
+        this.schedule = schedule;
     }
 
     public int getPhonenum() {
