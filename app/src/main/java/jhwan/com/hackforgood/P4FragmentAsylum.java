@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-import jhwan.com.hackforgood.Adapter.P3Adapter;
+import jhwan.com.hackforgood.Adapter.P4Adapter;
 import jhwan.com.hackforgood.databinding.P4FragmentAsylumBinding;
 
 public class P4FragmentAsylum extends Fragment {
@@ -31,7 +31,7 @@ public class P4FragmentAsylum extends Fragment {
 
         recyclerView = (RecyclerView) rootView.findViewById(R.id.p4_recycler_view);
         //Se necesita un DAO de Entry.
-        recyclerView.setAdapter(new P3Adapter(new ArrayList<>()));
+        recyclerView.setAdapter(new P4Adapter(new ArrayList<>()));
         recyclerView.setLayoutManager(new LinearLayoutManager(rootView.getContext()));
 
         binding = P4FragmentAsylumBinding.inflate(inflater, container, false);
