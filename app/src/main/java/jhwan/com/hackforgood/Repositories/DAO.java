@@ -2,6 +2,7 @@ package jhwan.com.hackforgood.Repositories;
 
 import java.util.ArrayList;
 
+import jhwan.com.hackforgood.Model.forum.Entry;
 import jhwan.com.hackforgood.Model.location.Location;
 import jhwan.com.hackforgood.Model.users.Professional;
 
@@ -10,12 +11,15 @@ public class DAO {
     // Atributes
     private ArrayList<Professional> professionals = new ArrayList<>();
     private ArrayList<Location> locations = new ArrayList<>();
+    private ArrayList<Entry> entries = new ArrayList<>();
+
 
     // Constructor
     public DAO(){
         // Initialize data in professionals list
         intializeProfessionals();
         initializeLocations();
+        initializeEntries();
     }
 
     // Initializers
@@ -46,8 +50,27 @@ public class DAO {
         location = new Location("Croquetas Assylium", "Barcelona", "Barcelona", "c/Croqueta Steet, 56", "08036", "Mon-Fri: from 10:00 to 17:00 \n Sat: from 8:00 to 11:00",937758451,"Assylium");
         locations.add(location);
     }
+
+    private void initializeEntries(){
+        Entry entry = new Entry("Problems with loaboral insertion","Laboral", "Blalalalalalallalallalalalalalaslalalalallalalalalalalalalalalalalalalalalalala");
+        entries.add(entry);
+        entry = new Entry("Cultural shock","Culture", "Blalalalalalallalallalalalalalaslalalalallalalalalalalalalalalalalalalalalalala");
+        entries.add(entry);
+        entry = new Entry("Language difficulties","Language", "Blalalalalalallalallalalalalalaslalalalallalalalalalalalalalalalalalalalalalala");
+        entries.add(entry);
+        entry = new Entry("Language difficulties","Language", "Blalalalalalallalallalalalalalaslalalalallalalalalalalalalalalalalalalalalalala");
+        entries.add(entry);
+        entry = new Entry("Language difficulties","Language", "Blalalalalalallalallalalalalalaslalalalallalalalalalalalalalalalalalalalalalala");
+        entries.add(entry);
+        entry = new Entry("Language difficulties","Language", "Blalalalalalallalallalalalalalaslalalalallalalalalalalalalalalalalalalalalalala");
+        entries.add(entry);
+        entry = new Entry("Language difficulties","Language", "Blalalalalalallalallalalalalalaslalalalallalalalalalalalalalalalalalalalalalala");
+        entries.add(entry);
+    }
     // Getter and setters
     public ArrayList<Professional> getProfessionals(){ return professionals;}
     public ArrayList<Location> getLocations(){ return locations;}
+    public ArrayList<Entry> getEntries(){ return entries;}
+
 
 }

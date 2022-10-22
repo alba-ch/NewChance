@@ -33,11 +33,11 @@ public class Entry {
 
     public Entry() {   }
 
-    public Entry(String title, String type, String message, ArrayList<Comment> comments){
+    public Entry(String title, String type, String message){
         this.message = message;
         this.title = title;
         this.type = type;
-        this.comments = comments;
+        comments = new ArrayList<>();
     }
 
     public Entry(String idEntry, String idUser, String message, String title, String type, boolean anonymous, LocalDate date, ArrayList<Comment> comments) {

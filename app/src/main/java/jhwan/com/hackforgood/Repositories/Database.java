@@ -5,6 +5,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
 
+import jhwan.com.hackforgood.Model.forum.Entry;
 import jhwan.com.hackforgood.Model.location.Location;
 import jhwan.com.hackforgood.Model.users.Professional;
 
@@ -36,4 +37,7 @@ public class Database {
     }
 
     public ArrayList<Location> getLocations(){return  dao.getLocations();}
+
+    public ArrayList<Entry> getEntries(){return  dao.getEntries();}
+
 }
