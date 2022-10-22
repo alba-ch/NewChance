@@ -37,9 +37,11 @@ public class P1FragmentMain extends Fragment {
         binding.p1ButtonFoodAid.setOnClickListener(view1 -> NavHostFragment.findNavController(P1FragmentMain.this)
                 .navigate(R.id.action_FragmentMain_to_FragmentFood));
         binding.p1ButtonEducation.setOnClickListener(view1 -> NavHostFragment.findNavController(P1FragmentMain.this)
-                .navigate(R.id.action_FragmentMain_to_FragmentAsylum));
+                .navigate(R.id.action_FragmentMain_to_FragmentEducation));
         binding.p1ButtonForum.setOnClickListener(view1 -> NavHostFragment.findNavController(P1FragmentMain.this)
                 .navigate(R.id.action_FragmentMain_to_FragmentForum));
+        binding.p1ButtonReport.setOnClickListener(view1 -> NavHostFragment.findNavController(P1FragmentMain.this)
+                .navigate(R.id.action_FragmentMain_to_FragmentReport));
         binding.p1ButtonMenu.setOnClickListener(view1 -> NavHostFragment.findNavController(P1FragmentMain.this)
                 .navigate(R.id.action_FragmentMain_to_FragmentTabMenu));
     }

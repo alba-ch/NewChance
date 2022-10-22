@@ -51,7 +51,7 @@ public class P2FragmentTabMenu extends Fragment {
                     break;
                 case EDUCATION:
                     NavHostFragment.findNavController(P2FragmentTabMenu.this)
-                            .navigate(R.id.action_FragmentTabMenu_to_FragmentMain);
+                            .navigate(R.id.action_FragmentTabMenu_to_FragmentEducation);
                     break;
                 case FORUM:
                     NavHostFragment.findNavController(P2FragmentTabMenu.this)
@@ -59,7 +59,7 @@ public class P2FragmentTabMenu extends Fragment {
                     break;
                 case REPORT:
                     NavHostFragment.findNavController(P2FragmentTabMenu.this)
-                            .navigate(R.id.action_FragmentTabMenu_to_FragmentMain);
+                            .navigate(R.id.action_FragmentTabMenu_to_FragmentReport);
                     break;
                 default:
                     NavHostFragment.findNavController(P2FragmentTabMenu.this)
@@ -74,7 +74,7 @@ public class P2FragmentTabMenu extends Fragment {
         binding.p2ButtonFeedback.setOnClickListener(view1 -> NavHostFragment.findNavController(P2FragmentTabMenu.this)
                 .navigate(R.id.action_FragmentTabMenu_to_FragmentMain));
         binding.p2ButtonReport.setOnClickListener(view1 -> NavHostFragment.findNavController(P2FragmentTabMenu.this)
-                .navigate(R.id.action_FragmentTabMenu_to_FragmentForum));
+                .navigate(R.id.action_FragmentTabMenu_to_FragmentReport));
     }
 
     @Override
