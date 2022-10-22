@@ -13,21 +13,23 @@
         <entry key="..\:/Users/jhwan/AndroidStudioProjects/HackForGood/app/src/main/res/layout/p1_fragment_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/jhwan/AndroidStudioProjects/HackForGood/app/src/main/res/layout/p1_main.xml" value="0.264" />
         <entry key="..\:/Users/jhwan/AndroidStudioProjects/HackForGood/app/src/main/res/layout/p2_activity_tap_menu.xml" value="0.25" />
-        <entry key="..\:/Users/jhwan/AndroidStudioProjects/HackForGood/app/src/main/res/layout/p2_fragment_tap_menu.xml" value="0.1140625" />
+        <entry key="..\:/Users/jhwan/AndroidStudioProjects/HackForGood/app/src/main/res/layout/p2_fragment_tap_menu.xml" value="0.2" />
         <entry key="..\:/Users/jhwan/AndroidStudioProjects/HackForGood/app/src/main/res/layout/p2_tap_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/jhwan/AndroidStudioProjects/HackForGood/app/src/main/res/layout/p3_fragment_forum.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/jhwan/AndroidStudioProjects/HackForGood/app/src/main/res/layout/p3_recycler_view_entity_item.xml" value="0.2" />
+        <entry key="..\:/Users/jhwan/AndroidStudioProjects/HackForGood/app/src/main/res/layout/p3_recycler_view_entity_item.xml" value="0.264" />
         <entry key="..\:/Users/jhwan/AndroidStudioProjects/HackForGood/app/src/main/res/layout/p3_recycler_view_item.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/jhwan/AndroidStudioProjects/HackForGood/app/src/main/res/layout/p4_fragment_asylum.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/jhwan/AndroidStudioProjects/HackForGood/app/src/main/res/layout/p4_recycler_view_shelter_item.xml" value="0.264" />
         <entry key="..\:/Users/jhwan/AndroidStudioProjects/HackForGood/app/src/main/res/layout/p5_fragment_health_care.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/jhwan/AndroidStudioProjects/HackForGood/app/src/main/res/layout/p5_fragment_healthcare.xml" value="0.11302083333333333" />
-        <entry key="..\:/Users/jhwan/AndroidStudioProjects/HackForGood/app/src/main/res/layout/p6_fragment_food.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/jhwan/AndroidStudioProjects/HackForGood/app/src/main/res/layout/p5_fragment_healthcare.xml" value="0.264" />
+        <entry key="..\:/Users/jhwan/AndroidStudioProjects/HackForGood/app/src/main/res/layout/p6_fragment_food.xml" value="0.264" />
+        <entry key="..\:/Users/jhwan/AndroidStudioProjects/HackForGood/app/src/main/res/layout/p7_fragment_legal.xml" value="0.264" />
+        <entry key="..\:/Users/jhwan/AndroidStudioProjects/HackForGood/app/src/main/res/layout/p7_recycler_view_legal_item.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/jhwan/AndroidStudioProjects/HackForGood/app/src/main/res/menu/menu_main.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

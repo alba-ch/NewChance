@@ -27,6 +27,9 @@ public class P3FragmentForum extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        ((MainActivity) getActivity()).setCurrentFlag(MainActivity.Fragments.FORUM);
+        binding.p3ButtonMenu.setOnClickListener(view1 -> NavHostFragment.findNavController(P3FragmentForum.this)
+                .navigate(R.id.action_FragmentForum_to_FragmentTabMenu));
     }
 
     @Override

@@ -7,12 +7,13 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.fragment.NavHostFragment;
 
-import jhwan.com.hackforgood.databinding.P5FragmentHealthcareBinding;
+import jhwan.com.hackforgood.databinding.P7FragmentLegalBinding;
 
-public class P5FragmentHealthCare extends Fragment {
+public class P7FragmentLegal extends Fragment {
 
-    private P5FragmentHealthcareBinding binding;
+    private P7FragmentLegalBinding binding;
 
     @Override
     public View onCreateView(
@@ -20,13 +21,16 @@ public class P5FragmentHealthCare extends Fragment {
             Bundle savedInstanceState
     ) {
 
-        binding = P5FragmentHealthcareBinding.inflate(inflater, container, false);
+        binding = P7FragmentLegalBinding.inflate(inflater, container, false);
         return binding.getRoot();
 
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        ((MainActivity) getActivity()).setCurrentFlag(MainActivity.Fragments.LEGAL);
+        binding.p7ButtonMenu.setOnClickListener(view1 -> NavHostFragment.findNavController(P7FragmentLegal.this)
+                .navigate(R.id.action_FragmentLegal_to_FragmentTabMenu));
     }
 
     @Override

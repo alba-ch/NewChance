@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/p5_menu"
+        android:id="@+id/p6_button_menu"
         android:layout_width="22dp"
         android:layout_height="22dp"
         android:layout_marginTop="32dp"

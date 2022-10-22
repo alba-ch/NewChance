@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <TextView
-        android:id="@+id/p3_label_title"
+        android:id="@+id/p4_label_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/p4_button_menu"
         android:layout_width="22dp"
         android:layout_height="22dp"
         android:layout_marginTop="32dp"
@@ -74,10 +74,9 @@
         android:layout_height="553dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/p4_search_text_area"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.222"
         tools:listitem="@layout/p4_recycler_view_shelter_item" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
