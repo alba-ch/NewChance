@@ -33,6 +33,8 @@ public class P7Adapter  extends RecyclerView.Adapter<P7ViewHolder> {
         holder.setName(professional.getName());
         holder.setDirection(professional.getDirection());
         holder.setSchedule(professional.getSchedule());
+        holder.setProfession(professional.getProfession());
+
     }
 
     @Override

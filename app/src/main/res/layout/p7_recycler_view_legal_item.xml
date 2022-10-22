@@ -8,17 +8,33 @@
     android:paddingBottom="15dp"
     android:paddingTop="20dp"
     android:background="@drawable/item_border"
-    android:foreground="@drawable/item_border" android:layout_height="110dp" android:layout_width="match_parent">
+    android:foreground="@drawable/item_border" android:layout_height="180dp" android:layout_width="match_parent">
 
 
     <TextView
-        android:id="@+id/p4_item_name"
+        android:id="@+id/p7_item_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="16dp"
         android:text="Mario Rodríguez Catena"
+        android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/p7_item_profession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Lawyer"
+        android:textColor="#3a6c6c"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/p7_item_name"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -26,10 +42,63 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="mariorcatena@gmail.com"
-        app:layout_constraintStart_toStartOf="@+id/p4_item_name"
-        app:layout_constraintTop_toBottomOf="@+id/p4_item_name" />
+        android:layout_marginLeft="10dp"
+        android:text="Contact:"
+        app:layout_constraintTop_toBottomOf="@+id/p7_item_name"
+        android:textColor="@color/black"/>
 
+    <TextView
+        android:id="@+id/p7_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="60dp"
+        android:text="mariorcatena@gmail.com"
+        app:layout_constraintStart_toStartOf="@+id/contact"
+        app:layout_constraintTop_toBottomOf="@+id/p7_item_name"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/direction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
+        android:text="Direction:"
+        app:layout_constraintTop_toBottomOf="@+id/contact"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/p7_direction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="c/Calle Alba, 06"
+        app:layout_constraintStart_toStartOf="@+id/p7_contact"
+        app:layout_constraintTop_toBottomOf="@+id/p7_contact"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
+        android:text="Schedule:"
+        app:layout_constraintTop_toBottomOf="@+id/direction"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/p7_schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="Mon-Fri: from 10:00 to 17:00"
+        app:layout_constraintStart_toStartOf="@+id/p7_direction"
+        app:layout_constraintTop_toBottomOf="@+id/p7_direction"
+        android:textColor="@color/black"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

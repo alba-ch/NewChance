@@ -26,15 +26,14 @@ public class P4FragmentAsylum extends Fragment {
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
-        View rootView = inflater.inflate(R.layout.p4_fragment_asylum, container, false);
-        rootView.setTag(TAG);
+        binding = P4FragmentAsylumBinding.inflate(inflater, container, false);
+        binding.getRoot().setTag(TAG);
 
-        recyclerView = (RecyclerView) rootView.findViewById(R.id.p4_recycler_view);
+        recyclerView = (RecyclerView) binding.getRoot().findViewById(R.id.p4_recycler_view);
         //Se necesita un DAO de Entry.
         recyclerView.setAdapter(new P4Adapter(new ArrayList<>()));
-        recyclerView.setLayoutManager(new LinearLayoutManager(rootView.getContext()));
+        recyclerView.setLayoutManager(new LinearLayoutManager(binding.getRoot().getContext()));
 
-        binding = P4FragmentAsylumBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
 

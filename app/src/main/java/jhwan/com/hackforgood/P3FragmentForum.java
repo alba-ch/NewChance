@@ -27,15 +27,14 @@ public class P3FragmentForum extends Fragment {
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
-        View rootView = inflater.inflate(R.layout.p3_fragment_forum, container, false);
-        rootView.setTag(TAG);
+        binding = P3FragmentForumBinding.inflate(inflater, container, false);
+        binding.getRoot().setTag(TAG);
 
-        recyclerView = (RecyclerView) rootView.findViewById(R.id.p3_recycler_view);
+        recyclerView = (RecyclerView) binding.getRoot().findViewById(R.id.p3_recycler_view);
         //Se necesita un DAO de Entry.
         recyclerView.setAdapter(new P3Adapter(new ArrayList<>()));
-        recyclerView.setLayoutManager(new LinearLayoutManager(rootView.getContext()));
+        recyclerView.setLayoutManager(new LinearLayoutManager(binding.getRoot().getContext()));
 
-        binding = P3FragmentForumBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
 

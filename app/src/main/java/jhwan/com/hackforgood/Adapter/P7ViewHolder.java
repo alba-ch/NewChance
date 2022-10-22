@@ -12,12 +12,14 @@ public class P7ViewHolder extends RecyclerView.ViewHolder {
     private final TextView name;
     private final TextView direction;
     private final TextView schedule;
+    private final TextView profession;
 
     public P7ViewHolder(@NonNull View itemView) {
         super(itemView);
-        this.name = itemView.findViewById(R.id.p4_item_name);
-        this.direction = itemView.findViewById(R.id.p4_item_direction);
-        this.schedule = itemView.findViewById(R.id.p4_item_schedule);
+        this.name = itemView.findViewById(R.id.p7_item_name);
+        this.direction = itemView.findViewById(R.id.p7_direction);
+        this.schedule = itemView.findViewById(R.id.p7_schedule);
+        this.profession = itemView.findViewById(R.id.p7_item_profession);
     }
 
     public TextView getName() {
@@ -42,5 +44,13 @@ public class P7ViewHolder extends RecyclerView.ViewHolder {
 
     public void setSchedule(String schedule){
         this.schedule.setText(schedule);
+    }
+
+    public TextView getProfession() {
+        return profession;
+    }
+
+    public void setProfession(String profession){
+        this.profession.setText(profession);
     }
 }

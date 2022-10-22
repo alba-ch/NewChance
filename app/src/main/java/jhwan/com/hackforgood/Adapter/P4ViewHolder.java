@@ -15,7 +15,7 @@ public class P4ViewHolder extends RecyclerView.ViewHolder {
 
     public P4ViewHolder(@NonNull View itemView) {
         super(itemView);
-        this.name = itemView.findViewById(R.id.p4_item_name);
+        this.name = itemView.findViewById(R.id.p7_item_name);
         this.direction = itemView.findViewById(R.id.p4_item_direction);
         this.schedule = itemView.findViewById(R.id.p4_item_schedule);
     }

@@ -32,11 +32,12 @@ public class Professional extends User{
     // Constructors
 
 
-    public Professional(String name, String direction, String schedule) {
+    public Professional(String name, String direction, String schedule, String profession) {
         super("DefaultId", name, "DefaultGender", "DefaultAge", "DefaultPassword",
                 "DefaultImg", "DefaultDocImg", "DefaultEmail", true);
         this.direction = direction;
         this.schedule = schedule;
+        this.profession = profession;
     }
 
     public Professional(String id, String name, String sex, String age, String password, String img, String documention_img, String email, Boolean verified,

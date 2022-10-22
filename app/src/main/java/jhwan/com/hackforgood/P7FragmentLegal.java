@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 import jhwan.com.hackforgood.Adapter.P7Adapter;
+import jhwan.com.hackforgood.ViewModel.UsersViewModel;
 import jhwan.com.hackforgood.databinding.P7FragmentLegalBinding;
 
 public class P7FragmentLegal extends Fragment {
@@ -21,21 +22,23 @@ public class P7FragmentLegal extends Fragment {
     private P7FragmentLegalBinding binding;
     private static final String TAG = "p7_fragment_legal";
     private RecyclerView recyclerView;
+    private UsersViewModel userVM;
 
     @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
-        View rootView = inflater.inflate(R.layout.p7_fragment_legal, container, false);
-        rootView.setTag(TAG);
-
-        recyclerView = (RecyclerView) rootView.findViewById(R.id.p7_recycler_view);
-        //Se necesita un DAO de Entry.
-        recyclerView.setAdapter(new P7Adapter(new ArrayList<>()));
-        recyclerView.setLayoutManager(new LinearLayoutManager(rootView.getContext()));
-
         binding = P7FragmentLegalBinding.inflate(inflater, container, false);
+        binding.getRoot().setTag(TAG);
+
+        userVM = new UsersViewModel();
+
+        recyclerView = (RecyclerView) binding.getRoot().findViewById(R.id.p7_recycler_view);
+        //Se necesita un DAO de Entry.
+        recyclerView.setAdapter(new P7Adapter(userVM.getProByType("Lawyer")));
+        recyclerView.setLayoutManager(new LinearLayoutManager(binding.getRoot().getContext()));
+
         return binding.getRoot();
     }
 
