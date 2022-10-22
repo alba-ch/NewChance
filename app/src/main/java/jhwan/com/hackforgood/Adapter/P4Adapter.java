@@ -3,22 +3,21 @@ package jhwan.com.hackforgood.Adapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ListView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-import jhwan.com.hackforgood.Model.forum.Entry;
+import jhwan.com.hackforgood.Model.location.Location;
 import jhwan.com.hackforgood.Model.users.Professional;
 import jhwan.com.hackforgood.R;
 
 public class P4Adapter extends RecyclerView.Adapter<P4ViewHolder> {
-    private Professional[] professionalArr;
+    private Location[] locationArr;
 
-    public P4Adapter(ArrayList<Professional> professionalList){
-        this.professionalArr = professionalList.toArray(new Professional[0]);
+    public P4Adapter(ArrayList<Location> locations){
+        this.locationArr = locations.toArray(new Location[0]);
     }
 
     @Override
@@ -30,15 +29,18 @@ public class P4Adapter extends RecyclerView.Adapter<P4ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull P4ViewHolder holder, int position) {
-        final Professional professional = professionalArr[position];
+        final Location location = locationArr[position];
 
-        holder.setName(professional.getName());
-        holder.setDirection(professional.getDirection());
-        holder.setSchedule(professional.getSchedule());
+        holder.setName(location.getName());
+        String direction = location.getAdress() + ", " + location.getCity() + ", " +
+                location.getProvince() + " " + location.getCp();
+        holder.setDirection(direction);
+        holder.setSchedule(location.getSchedule());
+        holder.setType(location.getType());
     }
 
     @Override
     public int getItemCount() {
-        return professionalArr.length;
+        return locationArr.length;
     }
 }

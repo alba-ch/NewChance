@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="Asylum"
-        android:textColor="@color/text"
+        android:textColor="@color/black"
         android:textStyle="bold"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,7 +37,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="92dp"
-        android:text="find municipal centers near your area"
+        android:textColor="@color/black"
+        android:text="Find municipal centers near your area"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.188"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,6 +66,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="@+id/p4_title"
         app:layout_constraintTop_toBottomOf="@+id/p4_title" />
 

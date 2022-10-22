@@ -1,5 +1,6 @@
 package jhwan.com.hackforgood;
 
+
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +15,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 import jhwan.com.hackforgood.Adapter.P4Adapter;
+import jhwan.com.hackforgood.Adapter.P7Adapter;
+import jhwan.com.hackforgood.ViewModel.LocationViewModel;
+import jhwan.com.hackforgood.ViewModel.UsersViewModel;
 import jhwan.com.hackforgood.databinding.P4FragmentAsylumBinding;
 
 public class P4FragmentAsylum extends Fragment {
@@ -21,6 +25,8 @@ public class P4FragmentAsylum extends Fragment {
     private P4FragmentAsylumBinding binding;
     private static final String TAG = "p4_fragment_asylum";
     private RecyclerView recyclerView;
+    private LocationViewModel locationVM;
+
     @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,
@@ -29,9 +35,11 @@ public class P4FragmentAsylum extends Fragment {
         binding = P4FragmentAsylumBinding.inflate(inflater, container, false);
         binding.getRoot().setTag(TAG);
 
+        locationVM = new LocationViewModel();
+
         recyclerView = (RecyclerView) binding.getRoot().findViewById(R.id.p4_recycler_view);
         //Se necesita un DAO de Entry.
-        recyclerView.setAdapter(new P4Adapter(new ArrayList<>()));
+        recyclerView.setAdapter(new P4Adapter(locationVM.getLocationsByType("Assylium")));
         recyclerView.setLayoutManager(new LinearLayoutManager(binding.getRoot().getContext()));
 
         return binding.getRoot();

@@ -12,12 +12,15 @@ public class P4ViewHolder extends RecyclerView.ViewHolder {
     private final TextView name;
     private final TextView direction;
     private final TextView schedule;
+    private final TextView type;
 
     public P4ViewHolder(@NonNull View itemView) {
         super(itemView);
-        this.name = itemView.findViewById(R.id.p7_item_name);
+        this.name = itemView.findViewById(R.id.p4_item_name);
         this.direction = itemView.findViewById(R.id.p4_item_direction);
         this.schedule = itemView.findViewById(R.id.p4_item_schedule);
+        this.type = itemView.findViewById(R.id.p4_item_type);
+
     }
 
     public TextView getName() {
@@ -42,5 +45,13 @@ public class P4ViewHolder extends RecyclerView.ViewHolder {
 
     public void setSchedule(String schedule){
         this.schedule.setText(schedule);
+    }
+
+    public TextView getType() {
+        return type;
+    }
+
+    public void setType(String type){
+        this.type.setText(type);
     }
 }

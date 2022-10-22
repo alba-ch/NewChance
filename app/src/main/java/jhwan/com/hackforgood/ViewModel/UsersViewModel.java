@@ -11,7 +11,7 @@ import jhwan.com.hackforgood.Repositories.Database;
 
 public class UsersViewModel {
     // Atributes
-    private Database db = new Database();
+    private Database db = Database.getInstance();
     private ArrayList<Professional> professionals;
     private ArrayList<Refugee> refugees;
 

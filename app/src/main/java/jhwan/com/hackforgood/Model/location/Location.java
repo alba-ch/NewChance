@@ -18,12 +18,23 @@ public class Location {
         description: brief description of the place, the services it offers, its timetables, etc.
         phonenum: if the location has one, a phone number to contact them
      */
-    String id, name, type, province, city, adress, cp, email, website, description;
+    String id, name, type, province, city, adress, cp, email, website, description, schedule;
     int phonenum;
 
     //Constructors
 
     public Location() {   }
+
+    public Location(String name, String province, String city, String adress, String cp, String schedule, int phonenum, String type) {
+        this.name = name;
+        this.province = province;
+        this.city = city;
+        this.adress = adress;
+        this.cp = cp;
+        this.schedule = schedule;
+        this.phonenum = phonenum;
+        this.type = type;
+    }
 
     public Location(String id, String name, String type, String province, String city, String adress, String cp, String email, String website, String description, int phonenum) {
         this.id = id;
@@ -127,5 +138,13 @@ public class Location {
 
     public void setPhonenum(int phonenum) {
         this.phonenum = phonenum;
+    }
+
+    public String getSchedule() {
+        return schedule;
+    }
+
+    public void setSchedule(String schedule) {
+        this.schedule = schedule;
     }
 }
