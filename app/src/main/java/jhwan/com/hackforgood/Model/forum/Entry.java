@@ -1,8 +1,7 @@
 package jhwan.com.hackforgood.Model.forum;
 
 import java.time.LocalDate;
-
-import jhwan.com.hackforgood.Model.lists.List;
+import java.util.ArrayList;
 
 /*
 This class will contain all the data and functions of an entry in any kind of forum
@@ -25,19 +24,27 @@ public class Entry {
 
 
     */
-    String idEntry, idUser, message, type;
+    String idEntry, idUser, message, title, type;
     boolean anonymous;
     LocalDate date;
-    List<Comment> comments;
+    ArrayList<Comment> comments;
 
     // Constructors
 
     public Entry() {   }
 
-    public Entry(String idEntry, String idUser, String message, String type, boolean anonymous, LocalDate date, List<Comment> comments) {
+    public Entry(String title, String type, String message, ArrayList<Comment> comments){
+        this.message = message;
+        this.title = title;
+        this.type = type;
+        this.comments = comments;
+    }
+
+    public Entry(String idEntry, String idUser, String message, String title, String type, boolean anonymous, LocalDate date, ArrayList<Comment> comments) {
         this.idEntry = idEntry;
         this.idUser = idUser;
         this.message = message;
+        this.title = title;
         this.type = type;
         this.anonymous = anonymous;
         this.date = date;
@@ -69,6 +76,14 @@ public class Entry {
         this.message = message;
     }
 
+    public String getTitle(){
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
     public String getType() {
         return type;
     }
@@ -93,11 +108,11 @@ public class Entry {
         this.date = date;
     }
 
-    public List<Comment> getComments() {
+    public ArrayList<Comment> getComments() {
         return comments;
     }
 
-    public void setComments(List<Comment> comments) {
+    public void setComments(ArrayList<Comment> comments) {
         this.comments = comments;
     }
 }

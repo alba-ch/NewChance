@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="20dp"
+    android:paddingBottom="15dp"
+    android:paddingTop="25dp"
+    android:background="@drawable/item_border"
+    android:foreground="@drawable/item_border" android:layout_height="180dp" android:layout_width="match_parent">
+
+    <TextView
+        android:id="@+id/p3_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/title"
+        android:text="I need an Insurance"
+        android:textColor="@color/text"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/p3_item_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="advice"
+        android:textColor="@color/text"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/p3_item_content"
+        android:layout_width="380dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="8dp"
+        android:text="Comments\ncomments\ncomments"
+        android:textColor="@color/text"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p3_item_title" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="32dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/transparent"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p3_item_content"
+        app:srcCompat="@drawable/ic_comments" />
+
+    <TextView
+        android:id="@+id/p3_text_commentcount"
+        android:layout_width="62dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="5dp"
+        android:text="2"
+        android:textAlignment="textEnd"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/p3_item_content" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

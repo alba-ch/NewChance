@@ -3,26 +3,110 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/FragmentMain">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="jhwan.com.hackforgood.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        android:id="@+id/FragmentMain"
+        android:name="jhwan.com.hackforgood.P1FragmentMain"
+        android:label="Fragment Main"
+        tools:layout="@layout/p1_fragment_main">
 
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            android:id="@+id/action_FragmentMain_to_FragmentTabMenu"
+            app:destination="@id/FragmentTabMenu" />
+        <action
+            android:id="@+id/action_FragmentMain_to_FragmentAsylum"
+            app:destination="@id/FragmentAsylum" />
+        <action
+            android:id="@+id/action_FragmentMain_to_FragmentHealthcare"
+            app:destination="@id/FragmentHealthcare" />
+        <action
+            android:id="@+id/action_FragmentMain_to_FragmentLegal"
+            app:destination="@id/FragmentLegal" />
+        <action
+            android:id="@+id/action_FragmentMain_to_FragmentFood"
+            app:destination="@id/FragmentFood" />
+        <action
+            android:id="@+id/action_FragmentMain_to_FragmentEducation"
+            app:destination="@id/FragmentAsylum" />
+        <action
+            android:id="@+id/action_FragmentMain_to_FragmentForum"
+            app:destination="@id/FragmentForum" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FragmentTabMenu"
+        android:name="jhwan.com.hackforgood.P2FragmentTabMenu"
+        android:label="Fragment Asylum"
+        tools:layout="@layout/p2_fragment_tap_menu">
+
+        <action
+            android:id="@+id/action_FragmentTabMenu_to_FragmentMain"
+            app:destination="@id/FragmentMain" />
+        <action
+            android:id="@+id/action_FragmentTabMenu_to_FragmentAsylum"
+            app:destination="@id/FragmentAsylum" />
+        <action
+            android:id="@+id/action_FragmentTabMenu_to_FragmentHealthcare"
+            app:destination="@id/FragmentHealthcare" />
+        <action
+            android:id="@+id/action_FragmentTabMenu_to_FragmentLegal"
+            app:destination="@id/FragmentLegal" />
+        <action
+            android:id="@+id/action_FragmentTabMenu_to_FragmentFood"
+            app:destination="@id/FragmentFood" />
+        <action
+            android:id="@+id/action_FragmentTabMenu_to_FragmentForum"
+            app:destination="@id/FragmentForum" />
     </fragment>
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="jhwan.com.hackforgood.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        android:id="@+id/FragmentForum"
+        android:name="jhwan.com.hackforgood.P3FragmentForum"
+        android:label="Fragment Forum"
+        tools:layout="@layout/p3_fragment_forum">
 
         <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            android:id="@+id/action_FragmentForum_to_FragmentTabMenu"
+            app:destination="@id/FragmentTabMenu" />
+    </fragment>
+    <fragment
+        android:id="@+id/FragmentAsylum"
+        android:name="jhwan.com.hackforgood.P4FragmentAsylum"
+        android:label="Fragment Asylum"
+        tools:layout="@layout/p4_fragment_asylum">
+
+        <action
+            android:id="@+id/action_FragmentAsylum_to_FragmentTabMenu"
+            app:destination="@id/FragmentTabMenu" />
+    </fragment>
+    <fragment
+        android:id="@+id/FragmentHealthcare"
+        android:name="jhwan.com.hackforgood.P5FragmentHealthcare"
+        android:label="Fragment Healthcare"
+        tools:layout="@layout/p5_fragment_healthcare">
+
+        <action
+            android:id="@+id/action_FragmentHealthcare_to_FragmentTabMenu"
+            app:destination="@id/FragmentTabMenu" />
+    </fragment>
+    <fragment
+        android:id="@+id/FragmentFood"
+        android:name="jhwan.com.hackforgood.P6FragmentFood"
+        android:label="Fragment Food"
+        tools:layout="@layout/p6_fragment_food">
+
+        <action
+            android:id="@+id/action_FragmentFood_to_FragmentTabMenu"
+            app:destination="@id/FragmentTabMenu" />
+    </fragment>
+    <fragment
+        android:id="@+id/FragmentLegal"
+        android:name="jhwan.com.hackforgood.P7FragmentLegal"
+        android:label="Fragment Legal"
+        tools:layout="@layout/p7_fragment_legal">
+
+        <action
+            android:id="@+id/action_FragmentLegal_to_FragmentTabMenu"
+            app:destination="@id/FragmentTabMenu" />
     </fragment>
 </navigation>

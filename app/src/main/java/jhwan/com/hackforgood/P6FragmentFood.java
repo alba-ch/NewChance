@@ -9,11 +9,11 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import jhwan.com.hackforgood.databinding.FragmentSecondBinding;
+import jhwan.com.hackforgood.databinding.P6FragmentFoodBinding;
 
-public class SecondFragment extends Fragment {
+public class P6FragmentFood extends Fragment {
 
-    private FragmentSecondBinding binding;
+    private P6FragmentFoodBinding binding;
 
     @Override
     public View onCreateView(
@@ -21,21 +21,16 @@ public class SecondFragment extends Fragment {
             Bundle savedInstanceState
     ) {
 
-        binding = FragmentSecondBinding.inflate(inflater, container, false);
+        binding = P6FragmentFoodBinding.inflate(inflater, container, false);
         return binding.getRoot();
 
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
-        binding.buttonSecond.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NavHostFragment.findNavController(SecondFragment.this)
-                        .navigate(R.id.action_SecondFragment_to_FirstFragment);
-            }
-        });
+        ((MainActivity) getActivity()).setCurrentFlag(MainActivity.Fragments.FOOD);
+        binding.p6ButtonMenu.setOnClickListener(view1 -> NavHostFragment.findNavController(P6FragmentFood.this)
+                .navigate(R.id.action_FragmentFood_to_FragmentTabMenu));
     }
 
     @Override
@@ -43,5 +38,4 @@ public class SecondFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
-
 }
