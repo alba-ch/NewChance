@@ -42,8 +42,11 @@
                     android:layout_height="45dp"
                     android:layout_marginStart="24dp"
                     android:layout_marginTop="24dp"
+                    android:src="@drawable/profilepic"
+                    android:scaleType="centerCrop"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
+
                     app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
                     tools:srcCompat="@tools:sample/avatars" />
 
@@ -55,6 +58,7 @@
                     android:layout_marginTop="36dp"
                     android:text="Irene Berlanga"
                     android:textSize="16dp"
+                    android:textColor="#3a6c6c"
                     app:layout_constraintStart_toEndOf="@+id/p1_image_pfp"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -62,9 +66,9 @@
                     android:id="@+id/p1_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="88dp"
-                    android:text="LocalHelp"
-                    android:textColor="@color/text"
+                    android:layout_marginTop="90dp"
+                    android:text="New Chance"
+                    android:textColor="#3a6c6c"
                     android:textSize="24sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -89,12 +93,12 @@
                     android:id="@+id/p1_button_asylum"
                     android:layout_width="140dp"
                     android:layout_height="130dp"
-                    android:layout_marginTop="44dp"
+                    android:layout_marginTop="30dp"
                     android:backgroundTint="@color/transparent"
                     android:padding="0dp"
                     android:scaleType="fitXY"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.196"
+                    app:layout_constraintHorizontal_bias="0.15"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/p1_description"
                     app:srcCompat="@drawable/btn_asylum" />

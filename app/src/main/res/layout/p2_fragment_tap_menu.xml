@@ -129,6 +129,8 @@
         android:id="@+id/p2_image_pfp"
         android:layout_width="45dp"
         android:layout_height="45dp"
+        android:src="@drawable/profilepic"
+        android:scaleType="centerCrop"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -144,6 +146,7 @@
         android:layout_marginTop="36dp"
         android:text="Irene Berlanga"
         android:textSize="16dp"
+        android:textColor="#3a6c6c"
         app:layout_constraintStart_toEndOf="@+id/p2_image_pfp"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

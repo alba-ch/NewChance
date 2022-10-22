@@ -13,7 +13,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:text="Report missing person"
-            android:textColor="@color/text"
+            android:textColor="@color/black"
             android:textSize="30sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -39,6 +39,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="92dp"
+            android:textColor="@color/black"
             android:text="Please provide all the information required."
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.267"
@@ -63,6 +64,7 @@
             android:layout_marginStart="48dp"
             android:layout_marginTop="28dp"
             android:ems="10"
+            android:textColor="#3a6c6c"
             android:inputType="textPersonName"
             app:layout_constraintStart_toEndOf="@+id/p9_text_name"
             app:layout_constraintTop_toBottomOf="@+id/p9_title2" />
@@ -74,6 +76,7 @@
             android:layout_marginStart="28dp"
             android:layout_marginTop="4dp"
             android:ems="10"
+            android:textColor="#3a6c6c"
             android:inputType="textPersonName"
             app:layout_constraintStart_toEndOf="@+id/p9_text_surnames"
             app:layout_constraintTop_toBottomOf="@+id/p9_input_name" />
@@ -85,6 +88,7 @@
             android:layout_marginStart="52dp"
             android:layout_marginTop="8dp"
             android:ems="10"
+            android:textColor="#3a6c6c"
             android:inputType="textEmailAddress"
             app:layout_constraintStart_toEndOf="@+id/p9_text_email"
             app:layout_constraintTop_toBottomOf="@+id/p9_input_surnames" />
@@ -96,6 +100,7 @@
             android:layout_marginStart="48dp"
             android:layout_marginTop="8dp"
             android:ems="10"
+            android:textColor="#3a6c6c"
             android:inputType="number"
             app:layout_constraintStart_toEndOf="@+id/p9_text_phone"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
@@ -107,6 +112,7 @@
             android:layout_marginTop="24dp"
             android:ems="10"
             android:inputType="textPersonName"
+            android:textColor="@color/black"
             android:text="Missing person description"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.495"
