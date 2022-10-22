@@ -14,7 +14,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 import jhwan.com.hackforgood.Adapter.P3Adapter;
-import jhwan.com.hackforgood.ViewModel.EntryViewModel;
 import jhwan.com.hackforgood.databinding.P3FragmentForumBinding;
 
 public class P3FragmentForum extends Fragment {
@@ -22,7 +21,6 @@ public class P3FragmentForum extends Fragment {
     private P3FragmentForumBinding binding;
     private static final String TAG = "p3_fragment_forum";
     private RecyclerView recyclerView;
-    private EntryViewModel entryVM;
 
     @Override
     public View onCreateView(
@@ -32,11 +30,9 @@ public class P3FragmentForum extends Fragment {
         binding = P3FragmentForumBinding.inflate(inflater, container, false);
         binding.getRoot().setTag(TAG);
 
-        entryVM = new EntryViewModel();
-
         recyclerView = (RecyclerView) binding.getRoot().findViewById(R.id.p3_recycler_view);
         //Se necesita un DAO de Entry.
-        recyclerView.setAdapter(new P3Adapter(entryVM.getEntries()));
+        recyclerView.setAdapter(new P3Adapter(new ArrayList<>()));
         recyclerView.setLayoutManager(new LinearLayoutManager(binding.getRoot().getContext()));
 
         return binding.getRoot();
