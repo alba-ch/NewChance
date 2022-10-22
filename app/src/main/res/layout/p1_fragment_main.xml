@@ -163,7 +163,7 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="265dp">
+                android:layout_height="wrap_content">
 
                 <Button
                     android:id="@+id/p1_button_report"
@@ -181,8 +181,9 @@
                 <TextView
                     android:id="@+id/p1_help_label"
                     android:layout_width="359dp"
-                    android:layout_height="84dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="100dp"
+                    android:paddingBottom="40dp"
                     android:text="@string/wanttohelp"
                     android:textColor="@color/text"
                     android:textStyle="bold"
