@@ -48,14 +48,15 @@
         app:srcCompat="@drawable/ic_menu" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/p3_recycler_view"
         android:layout_width="364dp"
         android:layout_height="626dp"
         android:layout_marginTop="148dp"
-        tools:listitem="@layout/p3_recycler_view_entity_item"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/p3_recycler_view_entity_item" />
 
     <Spinner
         android:id="@+id/spinner"
