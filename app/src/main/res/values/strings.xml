@@ -8,26 +8,25 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     
-    <string name="education"><b>Educación obligatoria</b>\n\nEn España, todas las personas extranjeras menores de 16 años tienen pleno derecho a acceder a las enseñanzas obligatorias del sistema educativo. De tal forma que pueden acceder a becas y ayudas y obtener la titulación académica correspondiente en las mismas condiciones que los españoles.\n
-El derecho a la educación básica se garantiza independientemente de la situación legal de la familia. Tanto si los progenitores se encuentran en situación irregular, como si son refugiados o cumplen los requisitos para ser residentes, los hijos o hijas deberán ser igualmente escolarizados.
+    <string name="education"><b>Compulsory education</b>\n\nIn Spain, all foreigners under the age of 16 have the full right to access the compulsory education of the educational system. In such a way that they can access scholarships and grants and obtain the corresponding academic degree under the same conditions as Spaniards.\n
+The right to basic education is guaranteed regardless of the legal status of the family. Whether the parents are in an irregular situation, as if they are refugees or meet the requirements to be residents, the sons or daughters must also attend school.
 <a href="https://web.gencat.cat/es/temes/educacio/index.html">https://web.gencat.cat/es/temes/educacio/index.html</a>\n
-i eres mayor de 18 años y deseas obtener el título de Graduado en Educación Secundaria Obligatoria puedes realizar la prueba para la obtención directa del título <a href="https://educacio.gencat.cat/ca/serveis-tramits/proves/proves-lliures-obtencio-titols/obtencio-geso-mes-18-anys/">https://educacio.gencat.cat/ca/serveis-tramits/proves/proves-lliures-obtencio-titols/obtencio-geso-mes-18-anys/</a>
+If you are over 18 years old and wish to obtain the title of Graduate in Compulsory Secondary Education, you can take the test to directly obtain the title <a href="https://educacio.gencat.cat/ca/serveis-tramits/proves/ proves-lliures-obtencio-titols/obtencio-geso-mes-18-anys/">https://educacio.gencat.cat/ca/serveis-tramits/proves/proves-lliures-obtencio-titols/obtencio-geso- month-18-anys/</a>
 
-\n\n<b>Educación postobligatoria</b>\n
-Todos los extranjeros menores de edad y los extranjeros residentes mayores de 18 años tienen el derecho a acceder a las etapas educativas postobligatorias, a la obtención de las titulaciones correspondientes y a las becas y ayudas en las mismas condiciones que los españoles.\n
-Por lo tanto, si eres migrante o refugiado y deseas continuar tu formación postobligatoria fuera de tu país de origen, puedes acceder a cualquier nivel del sistema educativo español, siempre que cumplas con los requisitos académicos de acceso.
-Dependiendo de tu formación previa y tus objetivos académicos, en la educación postobligatoria existen diferentes opciones formativas entre las que podrás elegir
+\n<b>Post-compulsory education</b>\n
+All foreign minors and resident foreigners over 18 years of age have the right to access post-compulsory educational stages, obtain the corresponding qualifications and scholarships and grants under the same conditions as Spaniards.\n
+Therefore, if you are a migrant or refugee and wish to continue your post-compulsory education outside your country of origin, you can access any level of the Spanish education system, provided you meet the academic access requirements.
+Depending on your previous training and your academic goals, in post-compulsory education there are different training options from which you can choose
 <a href="https://web.gencat.cat/es/temes/educacio/index.html">https://web.gencat.cat/es/temes/educacio/index.html</a>\n
 
-Aprender el idioma
-Suele ser preferible aprender a través de cursos pada poder avanzar más rápido, algunos de ellos están especializado para personas migrantes y refugiadas y son gratuitos. En caso de querer complementar su curso con contenido adicional o ser autodidacta este material podría serle de utilidad.
-https://web.gencat.cat/es/ucraina/persones-refugiades/acollida-cultural-i-linguistica/
-español para niños
-https://carei.es/fich/aprendojugando2.pdf
-https://www.juntadeandalucia.es/export/drupaljda/13371609561450770.pdf
-https://espanolparainmigrantes.wordpress.com/
-Recuerda que el servicio de las bibliotecas es totalmente gratuito. Un carné de biblioteca permite utilizar aquellos servicios de la biblioteca pública que necesitan identificación: préstamo de documentos, reserva de ordenadores de internet y de las aulas multimedia, inscripción a cursos y talleres, uso del Wi-Fi. Además, permite disfrutar de muchas ventajas y descuentos.
-https://bibliotecavirtual.diba.cat/es/ajuda/carnet#:~:text=%C2%BFQu%C3%A9%20se%20necesita%3F,residencia%20indicando%20la%20direcci%C3%B3n%20postal.
+\n<b>Learn the language</b>\n
+It is usually preferable to learn through courses in order to advance faster, some of them are specialized for migrants and refugees and are free. If you want to complement your course with additional content or be self-taught, this material could be useful.
+<a href="https://web.gencat.cat/es/ukraina/persones-refugiades/acollida-cultural-i-linguistica/">https://web.gencat.cat/es/ukraina/persones-refugiades/acollida-cultural-i-linguistica/</a>
+\nspanish for kids
+<a href="https://carei.es/fich/aprendojugando2.pdf">https://carei.es/fich/aprendojugando2.pdf</a>
+<a href="https://www.juntadeandalucia.es/export/drupaljda/13371609561450770.pdf">https://www.juntadeandalucia.es/export/drupaljda/13371609561450770.pdf</a>
+<a href="https://espanolparainmigrantes.wordpress.com/">https://espanolparainmigrantes.wordpress.com/</a>
+\nRemember that the library service is totally free. A library card allows you to use those public library services that require identification: loan of documents, reservation of Internet computers and multimedia classrooms, registration for courses and workshops, use of Wi-Fi. In addition, it allows you to enjoy many advantages and discounts.<a href="https://bibliotecavirtual.diba.cat/es/ajuda/carnet#:~:text=%C2%BFQu%C3%A9%20se%20necesita%3F,residencia%20indicando%20la%20address%C3%B3n%20postal">https://bibliotecavirtual.diba.cat/es/ajuda/carnet#:~:text=%C2%BFQu%C3%A9%20se%20necesita%3F,residencia%20indicando%20la%20address%C3%B3n%20postal.</a>
 
     </string>
 </resources>
