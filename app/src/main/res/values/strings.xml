@@ -7,7 +7,8 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-
+    <string name="wanttohelp"><b>How I can help?</b>\n
+Making us known on social networks, making a donation or offering your services as a professional. \n<a href="">Click here to know more</a></string>
     <string name="healthcare"><i>Foreign persons who are not registered or authorized as residents in Spain have the right to health protection and health care under the same conditions as persons with Spanish nationality, as established in article 3.1.</i>\n
 <a href="https://www.boe.es/boe/dias/2018/07/30/pdfs/BOE-A-2018-10752.pdf">https://www.boe.es/boe/dias/2018/07/30/pdfs/BOE-A-2018-10752.pdf</a>\n
 How to get a health \n<a href="https://web.gencat.cat/es/tramits/tramits-temes/8144_-_Targeta_sanitaria_individual_TSI">https://web.gencat.cat/es/tramits/tramits-temes/8144_-_Targeta_sanitaria_individual_TSI</a>\n

@@ -179,28 +179,16 @@
 
                 <TextView
                     android:id="@+id/p1_help_label"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="96dp"
-                    android:text="If you want to help"
+                    android:layout_width="359dp"
+                    android:layout_height="84dp"
+                    android:layout_marginTop="100dp"
+                    android:text="@string/wanttohelp"
                     android:textColor="@color/text"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.08"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <TextView
-                    android:id="@+id/p1_help_description"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/text"
-                    android:layout_marginTop="16dp"
-                    android:text="Lorem ipsum, Lorem ipsum"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/p1_help_label"
-                    app:layout_constraintTop_toBottomOf="@id/p1_help_label" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
