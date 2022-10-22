@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "488654481659",
+    "project_id": "hack4good-7ba9c",
+    "storage_bucket": "hack4good-7ba9c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:488654481659:android:5cb47aacea28f06525e85e",
+        "android_client_info": {
+          "package_name": "jhwan.com.hackforgood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "488654481659-1ogqhtq4coahnhrjv2t79f8m8g310qn6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "jhwan.com.hackforgood",
+            "certificate_hash": "826c5514faf09d449d35403cea92216784773f31"
+          }
+        },
+        {
+          "client_id": "488654481659-r1s8e2m5jktotls10p8ou8urerjnjqp1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMTGDGtWTKqzwi9oZYbYZLAtG6q31WLVY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "488654481659-r1s8e2m5jktotls10p8ou8urerjnjqp1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
