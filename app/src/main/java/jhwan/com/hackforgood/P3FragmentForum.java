@@ -14,6 +14,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 import jhwan.com.hackforgood.Adapter.P3Adapter;
+import jhwan.com.hackforgood.Model.forum.Comment;
+import jhwan.com.hackforgood.Model.forum.Entry;
 import jhwan.com.hackforgood.databinding.P3FragmentForumBinding;
 
 public class P3FragmentForum extends Fragment {
@@ -27,15 +29,26 @@ public class P3FragmentForum extends Fragment {
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
-        View rootView = inflater.inflate(R.layout.p3_fragment_forum, container, false);
-        rootView.setTag(TAG);
-
-        recyclerView = (RecyclerView) rootView.findViewById(R.id.p3_recycler_view);
-        //Se necesita un DAO de Entry.
-        recyclerView.setAdapter(new P3Adapter(new ArrayList<>()));
-        recyclerView.setLayoutManager(new LinearLayoutManager(rootView.getContext()));
-
         binding = P3FragmentForumBinding.inflate(inflater, container, false);
+        binding.getRoot().setTag(TAG);
+
+        ArrayList<Entry> entries = new ArrayList<>();
+        ArrayList<Comment> comments = new ArrayList<>();
+        comments.add(new Comment());
+        comments.add(new Comment());
+        entries.add(new Entry("Title1", "General", "Hello I'm new in Barcelona!", comments));
+        comments.add(new Comment());
+        entries.add(new Entry("Title2", "General", "Does anyone knows where to buy phone cheaply?", comments));
+        comments.remove(0);
+        comments.remove(0);
+        entries.add(new Entry("Title3", "Advice", "Some advice. >>link", comments));
+        comments.remove(0);
+        entries.add(new Entry("Title4", "General", "This is general message", comments));
+
+        recyclerView = (RecyclerView) binding.getRoot().findViewById(R.id.p3_recycler_view);
+        //Se necesita un DAO de Entry.
+        recyclerView.setAdapter(new P3Adapter(entries));
+        recyclerView.setLayoutManager(new LinearLayoutManager(binding.getRoot().getContext()));
         return binding.getRoot();
     }
 
