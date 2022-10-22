@@ -50,6 +50,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="36dp"
+            android:textColor="@color/text"
             android:layout_marginTop="40dp"
             android:text="Name"
             app:layout_constraintStart_toStartOf="parent"
@@ -131,6 +132,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="36dp"
             android:layout_marginTop="36dp"
+            android:textColor="@color/text"
             android:text="Email"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/p9_text_surnames" />
@@ -141,6 +143,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="36dp"
             android:layout_marginTop="28dp"
+            android:textColor="@color/text"
             android:text="Phone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/p9_text_email" />
@@ -162,6 +165,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
+            android:textColor="@color/text"
             android:layout_marginTop="28dp"
             android:text="Surnames"
             app:layout_constraintStart_toStartOf="parent"

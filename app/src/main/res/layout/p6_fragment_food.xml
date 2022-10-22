@@ -63,6 +63,7 @@
                 android:layout_width="349dp"
                 android:layout_height="825dp"
                 android:layout_marginStart="28dp"
+                android:textColor="@color/text"
                 android:layout_marginTop="12dp"
                 android:text="@string/foodaid"
                 app:layout_constraintStart_toStartOf="parent"
